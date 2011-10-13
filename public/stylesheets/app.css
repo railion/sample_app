@@ -92,3 +92,18 @@ a.signup_button {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
+
+/* footer */
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 410px;
+  margin-left: auto;
+  marign-right: auto;
+}
+
+footer nav {
+  float: none;
+}
+}

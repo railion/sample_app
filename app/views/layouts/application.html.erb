@@ -4,25 +4,15 @@
   <head>
     <title><%= title %></title>
     <%= csrf_meta_tag %>
-    <%= stylesheet_link_tag 'blueprint/screen', media: 'screen' %>
-    <%= stylesheet_link_tag 'blueprint/print', media: 'print' %>
-    <%= stylesheet_link_tag 'app', media: 'screen' %>
+    <%= render 'layouts/styles' %>
   </head>
   <body>
     <div class="container">
-      <header>
-        <nav class="round">
-          <ul>
-            <li><%= link_to 'Home', '#' %></li>
-            <li><%= link_to 'Help', '#' %></li>
-            <li><%= link_to 'Sign In', '#' %></li>
-          </ul>
-        </nav>
-        <%= image_tag('rails.png', alt: 'Sample App', class: 'round') %>
-      </header>
+      <%= render 'layouts/header' %>
       <section class="round">
         <%= yield %>
       </section>
+      <%= render 'layouts/footer' %>
     </div>
   </body>
 </html>
